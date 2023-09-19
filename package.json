@@ -1,0 +1,123 @@
+{
+  "name": "@stdlib/ndarray-fancy",
+  "version": "0.0.0",
+  "description": "Fancy multidimensional array constructor.",
+  "license": "Apache-2.0",
+  "author": {
+    "name": "The Stdlib Authors",
+    "url": "https://github.com/stdlib-js/stdlib/graphs/contributors"
+  },
+  "contributors": [
+    {
+      "name": "The Stdlib Authors",
+      "url": "https://github.com/stdlib-js/stdlib/graphs/contributors"
+    }
+  ],
+  "main": "./lib",
+  "directories": {
+    "benchmark": "./benchmark",
+    "doc": "./docs",
+    "example": "./examples",
+    "lib": "./lib",
+    "test": "./test"
+  },
+  "types": "./docs/types",
+  "scripts": {
+    "test": "make test",
+    "test-cov": "make test-cov",
+    "examples": "make examples",
+    "benchmark": "make benchmark"
+  },
+  "homepage": "https://stdlib.io",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/stdlib-js/ndarray-fancy.git"
+  },
+  "bugs": {
+    "url": "https://github.com/stdlib-js/stdlib/issues"
+  },
+  "dependencies": {
+    "@stdlib/array-base-assert-contains": "^0.0.1",
+    "@stdlib/array-base-take": "^0.0.1",
+    "@stdlib/array-base-zeros": "^0.0.2",
+    "@stdlib/assert-is-function": "^0.0.8",
+    "@stdlib/ndarray-base-buffer": "^0.0.6",
+    "@stdlib/ndarray-base-numel": "^0.0.8",
+    "@stdlib/ndarray-base-sub2ind": "^0.0.8",
+    "@stdlib/ndarray-base-vind2bind": "^0.0.8",
+    "@stdlib/ndarray-ctor": "^0.0.10",
+    "@stdlib/ndarray-defaults": "github:stdlib-js/ndarray-defaults#main",
+    "@stdlib/proxy-ctor": "^0.0.7",
+    "@stdlib/slice-base-length": "github:stdlib-js/slice-base-length#main",
+    "@stdlib/slice-base-normalize-multi-slice": "github:stdlib-js/slice-base-normalize-multi-slice#main",
+    "@stdlib/slice-base-normalize-slice": "github:stdlib-js/slice-base-normalize-slice#main",
+    "@stdlib/slice-base-seq2multislice": "github:stdlib-js/slice-base-seq2multislice#main",
+    "@stdlib/slice-base-seq2slice": "github:stdlib-js/slice-base-seq2slice#main",
+    "@stdlib/slice-base-shape": "github:stdlib-js/slice-base-shape#main",
+    "@stdlib/slice-base-str2multislice": "github:stdlib-js/slice-base-str2multislice#main",
+    "@stdlib/slice-base-str2slice": "github:stdlib-js/slice-base-str2slice#main",
+    "@stdlib/string-base-replace": "^0.0.2",
+    "@stdlib/string-base-trim": "^0.0.2",
+    "@stdlib/string-format": "^0.0.3",
+    "@stdlib/types": "^0.0.14",
+    "@stdlib/utils-define-nonenumerable-read-only-property": "^0.0.7",
+    "@stdlib/utils-inherit": "^0.0.8",
+    "@stdlib/utils-properties-in": "^0.0.7"
+  },
+  "devDependencies": {
+    "@stdlib/array-complex64": "^0.0.6",
+    "@stdlib/array-float64": "^0.0.6",
+    "@stdlib/assert-has-proxy-support": "^0.0.8",
+    "@stdlib/assert-instance-of": "^0.0.8",
+    "@stdlib/assert-is-ndarray-like": "^0.0.6",
+    "@stdlib/bench": "^0.0.12",
+    "@stdlib/ndarray-to-array": "^0.0.1",
+    "@stdlib/slice-ctor": "github:stdlib-js/slice-ctor#main",
+    "@stdlib/slice-multi": "github:stdlib-js/slice-multi#main",
+    "tape": "git+https://github.com/kgryte/tape.git#fix/globby",
+    "istanbul": "^0.4.1",
+    "tap-min": "git+https://github.com/Planeshifter/tap-min.git"
+  },
+  "engines": {
+    "node": ">=6.0.0",
+    "npm": ">2.7.0"
+  },
+  "os": [
+    "aix",
+    "darwin",
+    "freebsd",
+    "linux",
+    "macos",
+    "openbsd",
+    "sunos",
+    "win32",
+    "windows"
+  ],
+  "keywords": [
+    "stdlib",
+    "stdtypes",
+    "types",
+    "data",
+    "structure",
+    "array",
+    "typed",
+    "typed array",
+    "typed-array",
+    "multidimensional",
+    "dimensions",
+    "dims",
+    "ndarray",
+    "constructors",
+    "constructor",
+    "ctors",
+    "ctor",
+    "numpy.ndarray",
+    "fancy",
+    "slicing"
+  ],
+  "__stdlib__": {},
+  "funding": {
+    "type": "opencollective",
+    "url": "https://opencollective.com/stdlib"
+  }
+}

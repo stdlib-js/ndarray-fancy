@@ -44,8 +44,8 @@ limitations under the License.
 A **FancyArray** is an [`ndarray`][@stdlib/ndarray/ctor] which supports slicing via indexing expressions.
 
 ```javascript
-var ndarray2array = require( '@stdlib/ndarray-to-array' );
-var FancyArray = require( '@stdlib/ndarray-fancy' );
+import ndarray2array from 'https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-to-array@esm/index.mjs';
+import FancyArray from 'https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-fancy@esm/index.mjs';
 
 var buffer = [ 1, 2, 3, 4, 5, 6 ];
 var x = new FancyArray( 'generic', buffer, [ 6 ], [ 1 ], 0, 'row-major' );
@@ -79,30 +79,14 @@ arr = ndarray2array( y );
 
 <!-- Package usage documentation. -->
 
-<section class="installation">
 
-## Installation
-
-```bash
-npm install @stdlib/ndarray-fancy
-```
-
-Alternatively,
-
--   To load the package in a website via a `script` tag without installation and bundlers, use the [ES Module][es-module] available on the [`esm` branch][esm-url].
--   If you are using Deno, visit the [`deno` branch][deno-url].
--   For use in Observable, or in browser/node environments, use the [Universal Module Definition (UMD)][umd] build available on the [`umd` branch][umd-url].
-
-The [branches.md][branches-url] file summarizes the available branches and displays a diagram illustrating their relationships.
-
-</section>
 
 <section class="usage">
 
 ## Usage
 
 ```javascript
-var FancyArray = require( '@stdlib/ndarray-fancy' );
+import FancyArray from 'https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-fancy@esm/index.mjs';
 ```
 
 <a name="main"></a>
@@ -213,7 +197,7 @@ var str = FancyArray.name;
 Size (in bytes) of the array (if known).
 
 ```javascript
-var Float64Array = require( '@stdlib/array-float64' );
+import Float64Array from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-float64@esm/index.mjs';
 
 // Specify the array configuration:
 var buffer = new Float64Array( [ 1.0, 2.0, 3.0, 4.0 ] );
@@ -255,7 +239,7 @@ var nbytes = arr.byteLength;
 Size (in bytes) of each array element (if known).
 
 ```javascript
-var Float32Array = require( '@stdlib/array-float32' );
+import Float32Array from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-float32@esm/index.mjs';
 
 // Specify the array configuration:
 var buffer = new Float32Array( [ 1.0, 2.0, 3.0, 4.0 ] );
@@ -297,7 +281,7 @@ var nbytes = arr.BYTES_PER_ELEMENT;
 A reference to the underlying data buffer.
 
 ```javascript
-var Int8Array = require( '@stdlib/array-int8' );
+import Int8Array from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-int8@esm/index.mjs';
 
 // Specify the array configuration:
 var buffer = new Int8Array( [ 1, 2, 3, 4 ] );
@@ -324,7 +308,7 @@ var bool = ( d === buffer );
 Underlying [data type][@stdlib/ndarray/dtypes].
 
 ```javascript
-var Uint8Array = require( '@stdlib/array-uint8' );
+import Uint8Array from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-uint8@esm/index.mjs';
 
 // Specify the array configuration:
 var buffer = new Uint8Array( [ 1, 2, 3, 4 ] );
@@ -354,7 +338,7 @@ Meta information, such as information regarding the memory layout of the array. 
 An array is contiguous if (1) an array is compatible with being stored in a single memory segment and (2) each array element is adjacent to the next array element. Note that an array can be both row-major contiguous and column-major contiguous at the same time (e.g., if an array is a 1-dimensional array with `strides = [1]`).
 
 ```javascript
-var Int32Array = require( '@stdlib/array-int32' );
+import Int32Array from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-int32@esm/index.mjs';
 
 // Specify the array configuration:
 var buffer = new Int32Array( [ 1, 2, 3, 4 ] );
@@ -378,7 +362,7 @@ var flg = arr.flags;
 Number of array elements.
 
 ```javascript
-var Uint16Array = require( '@stdlib/array-uint16' );
+import Uint16Array from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-uint16@esm/index.mjs';
 
 // Specify the array configuration:
 var buffer = new Uint16Array( [ 1, 2, 3, 4 ] );
@@ -402,7 +386,7 @@ var len = arr.length;
 Number of dimensions.
 
 ```javascript
-var Uint8ClampedArray = require( '@stdlib/array-uint8c' );
+import Uint8ClampedArray from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-uint8c@esm/index.mjs';
 
 // Specify the array configuration:
 var buffer = new Uint8ClampedArray( [ 1, 2, 3, 4 ] );
@@ -426,7 +410,7 @@ var ndims = arr.ndims;
 Index offset which specifies the `buffer` index at which to start iterating over array elements.
 
 ```javascript
-var Int16Array = require( '@stdlib/array-int16' );
+import Int16Array from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-int16@esm/index.mjs';
 
 // Specify the array configuration:
 var buffer = new Int16Array( [ 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12 ] );
@@ -450,7 +434,7 @@ var o = arr.offset;
 Array order. The array order is either row-major (C-style) or column-major (Fortran-style).
 
 ```javascript
-var Uint32Array = require( '@stdlib/array-uint32' );
+import Uint32Array from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-uint32@esm/index.mjs';
 
 // Specify the array configuration:
 var buffer = new Uint32Array( [ 1, 2, 3, 4 ] );
@@ -717,11 +701,16 @@ The method does **not** serialize data outside of the buffer region defined by t
 
 <!-- eslint-disable new-cap, array-element-newline, comma-spacing -->
 
-```javascript
-var S = require( '@stdlib/slice-ctor' );
-var E = require( '@stdlib/slice-multi' );
-var toArray = require( '@stdlib/ndarray-to-array' );
-var FancyArray = require( '@stdlib/ndarray-fancy' );
+```html
+<!DOCTYPE html>
+<html lang="en">
+<body>
+<script type="module">
+
+import S from 'https://cdn.jsdelivr.net/gh/stdlib-js/slice-ctor@esm/index.mjs';
+import E from 'https://cdn.jsdelivr.net/gh/stdlib-js/slice-multi@esm/index.mjs';
+import toArray from 'https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-to-array@esm/index.mjs';
+import FancyArray from 'https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-fancy@esm/index.mjs';
 
 var buffer = [
     1, 2,
@@ -776,6 +765,10 @@ console.log( toArray( y3 ) );
 var y4 = x[ [ S(_,_,-2), S(_,_,-1) ] ];
 console.log( toArray( y4 ) );
 // => [ [ 20, 7 ], [ 4, 3 ] ]
+
+</script>
+</body>
+</html>
 ```
 
 </section>
@@ -807,7 +800,7 @@ console.log( toArray( y4 ) );
 
 ## Notice
 
-This package is part of [stdlib][stdlib], a standard library for JavaScript and Node.js, with an emphasis on numerical and scientific computing. The library provides a collection of robust, high performance libraries for mathematics, statistics, streams, utilities, and more.
+This package is part of [stdlib][stdlib], a standard library with an emphasis on numerical and scientific computing. The library provides a collection of robust, high performance libraries for mathematics, statistics, streams, utilities, and more.
 
 For more information on the project, filing bug reports and feature requests, and guidance on how to develop [stdlib][stdlib], see the main project [repository][stdlib].
 
@@ -869,17 +862,17 @@ Copyright &copy; 2016-2023. The Stdlib [Authors][stdlib-authors].
 
 [json]: http://www.json.org/
 
-[@stdlib/ndarray/ctor]: https://github.com/stdlib-js/ndarray-ctor
+[@stdlib/ndarray/ctor]: https://github.com/stdlib-js/ndarray-ctor/tree/esm
 
-[@stdlib/ndarray/dtypes]: https://github.com/stdlib-js/ndarray-dtypes
+[@stdlib/ndarray/dtypes]: https://github.com/stdlib-js/ndarray-dtypes/tree/esm
 
-[@stdlib/ndarray/orders]: https://github.com/stdlib-js/ndarray-orders
+[@stdlib/ndarray/orders]: https://github.com/stdlib-js/ndarray-orders/tree/esm
 
-[@stdlib/ndarray/index-modes]: https://github.com/stdlib-js/ndarray-index-modes
+[@stdlib/ndarray/index-modes]: https://github.com/stdlib-js/ndarray-index-modes/tree/esm
 
-[@stdlib/repl]: https://github.com/stdlib-js/repl
+[@stdlib/repl]: https://github.com/stdlib-js/repl/tree/esm
 
-[@stdlib/proxy/ctor]: https://github.com/stdlib-js/proxy-ctor
+[@stdlib/proxy/ctor]: https://github.com/stdlib-js/proxy-ctor/tree/esm
 
 </section>
 

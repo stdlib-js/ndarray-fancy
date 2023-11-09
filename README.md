@@ -794,6 +794,13 @@ console.log( toArray( y4 ) );
 
 <section class="related">
 
+* * *
+
+## See Also
+
+-   <span class="package-name">[`@stdlib/ndarray-array`][@stdlib/ndarray/array]</span><span class="delimiter">: </span><span class="description">multidimensional arrays.</span>
+-   <span class="package-name">[`@stdlib/ndarray-ctor`][@stdlib/ndarray/ctor]</span><span class="delimiter">: </span><span class="description">multidimensional array constructor.</span>
+
 </section>
 
 <!-- /.related -->
@@ -881,7 +888,14 @@ Copyright &copy; 2016-2023. The Stdlib [Authors][stdlib-authors].
 
 [@stdlib/proxy/ctor]: https://github.com/stdlib-js/proxy-ctor
 
+<!-- <related-links> -->
+
+[@stdlib/ndarray/array]: https://github.com/stdlib-js/ndarray-array
+
+[@stdlib/ndarray/ctor]: https://github.com/stdlib-js/ndarray-ctor
+
+<!-- </related-links> -->
+
 </section>
 
 <!-- /.links -->
-

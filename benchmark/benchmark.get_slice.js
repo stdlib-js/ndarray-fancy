@@ -22,7 +22,7 @@
 
 // MODULES //
 
-var bench = require( '@stdlib/bench' );
+var bench = require( '@stdlib/bench-harness' );
 var hasProxySupport = require( '@stdlib/assert-has-proxy-support' );
 var S = require( '@stdlib/slice-ctor' );
 var MultiSlice = require( '@stdlib/slice-multi' );

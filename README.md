@@ -45,7 +45,7 @@ A **FancyArray** is an [`ndarray`][@stdlib/ndarray/ctor] which supports slicing 
 
 ```javascript
 import ndarray2array from 'https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-to-array@esm/index.mjs';
-import FancyArray from 'https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-fancy@esm/index.mjs';
+import FancyArray from 'https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-fancy@v0.2.0-esm/index.mjs';
 
 var buffer = [ 1, 2, 3, 4, 5, 6 ];
 var x = new FancyArray( 'generic', buffer, [ 6 ], [ 1 ], 0, 'row-major' );
@@ -86,7 +86,7 @@ arr = ndarray2array( y );
 ## Usage
 
 ```javascript
-import FancyArray from 'https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-fancy@esm/index.mjs';
+import FancyArray from 'https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-fancy@v0.2.0-esm/index.mjs';
 ```
 
 <a name="main"></a>
@@ -711,7 +711,7 @@ The method does **not** serialize data outside of the buffer region defined by t
 import S from 'https://cdn.jsdelivr.net/gh/stdlib-js/slice-ctor@esm/index.mjs';
 import E from 'https://cdn.jsdelivr.net/gh/stdlib-js/slice-multi@esm/index.mjs';
 import toArray from 'https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-to-array@esm/index.mjs';
-import FancyArray from 'https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-fancy@esm/index.mjs';
+import FancyArray from 'https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-fancy@v0.2.0-esm/index.mjs';
 
 var buffer = [
     1, 2,

@@ -88,7 +88,7 @@ arr = ndarray2array( y );
 To use in Observable,
 
 ```javascript
-FancyArray = require( 'https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-fancy@umd/browser.js' )
+FancyArray = require( 'https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-fancy@v0.2.1-umd/browser.js' )
 ```
 
 To vendor stdlib functionality and avoid installing dependency trees for Node.js, you can use the UMD server build:
@@ -100,7 +100,7 @@ var FancyArray = require( 'path/to/vendor/umd/ndarray-fancy/index.js' )
 To include the bundle in a webpage,
 
 ```html
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-fancy@umd/browser.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-fancy@v0.2.1-umd/browser.js"></script>
 ```
 
 If no recognized module system is present, access bundle contents via the global scope:
@@ -733,7 +733,7 @@ The method does **not** serialize data outside of the buffer region defined by t
 <script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/slice-ctor@umd/browser.js"></script>
 <script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/slice-multi@umd/browser.js"></script>
 <script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-to-array@umd/browser.js"></script>
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-fancy@umd/browser.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-fancy@v0.2.1-umd/browser.js"></script>
 <script type="text/javascript">
 (function () {
 

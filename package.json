@@ -1,9 +1,33 @@
 {
   "name": "@stdlib/ndarray-fancy",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "Fancy multidimensional array constructor.",
   "license": "Apache-2.0",
-  "main": "./index.js",
+  "author": {
+    "name": "The Stdlib Authors",
+    "url": "https://github.com/stdlib-js/stdlib/graphs/contributors"
+  },
+  "contributors": [
+    {
+      "name": "The Stdlib Authors",
+      "url": "https://github.com/stdlib-js/stdlib/graphs/contributors"
+    }
+  ],
+  "main": "./lib",
+  "directories": {
+    "benchmark": "./benchmark",
+    "doc": "./docs",
+    "example": "./examples",
+    "lib": "./lib",
+    "test": "./test"
+  },
+  "types": "./docs/types",
+  "scripts": {
+    "test": "make test",
+    "test-cov": "make test-cov",
+    "examples": "make examples",
+    "benchmark": "make benchmark"
+  },
   "homepage": "https://stdlib.io",
   "repository": {
     "type": "git",
@@ -12,6 +36,84 @@
   "bugs": {
     "url": "https://github.com/stdlib-js/stdlib/issues"
   },
+  "dependencies": {
+    "@stdlib/array-base-assert-contains": "^0.2.1",
+    "@stdlib/assert-is-complex-like": "^0.2.1",
+    "@stdlib/assert-is-function": "^0.2.1",
+    "@stdlib/assert-is-integer": "^0.2.1",
+    "@stdlib/assert-is-ndarray-like": "^0.2.1",
+    "@stdlib/assert-is-number": "^0.2.1",
+    "@stdlib/assert-is-range-error": "^0.2.1",
+    "@stdlib/assert-is-syntax-error": "^0.2.1",
+    "@stdlib/assert-is-type-error": "^0.2.1",
+    "@stdlib/complex-dtype": "^0.2.1",
+    "@stdlib/constants-int16-max": "^0.2.1",
+    "@stdlib/constants-int32-max": "^0.2.1",
+    "@stdlib/constants-int8-max": "^0.2.1",
+    "@stdlib/ndarray-base-assert-is-complex-floating-point-data-type": "^0.2.1",
+    "@stdlib/ndarray-base-assert-is-floating-point-data-type": "^0.2.1",
+    "@stdlib/ndarray-base-assert-is-safe-data-type-cast": "^0.2.1",
+    "@stdlib/ndarray-base-assert-is-signed-integer-data-type": "^0.2.1",
+    "@stdlib/ndarray-base-assert-is-unsigned-integer-data-type": "^0.2.1",
+    "@stdlib/ndarray-base-slice": "^0.2.1",
+    "@stdlib/ndarray-base-slice-assign": "^0.2.1",
+    "@stdlib/ndarray-ctor": "^0.2.1",
+    "@stdlib/ndarray-defaults": "^0.2.1",
+    "@stdlib/ndarray-from-scalar": "^0.2.1",
+    "@stdlib/ndarray-min-dtype": "^0.2.1",
+    "@stdlib/proxy-ctor": "^0.2.1",
+    "@stdlib/slice-base-sargs2multislice": "^0.3.1",
+    "@stdlib/slice-base-seq2multislice": "^0.2.1",
+    "@stdlib/slice-base-str2multislice": "^0.2.1",
+    "@stdlib/slice-base-str2slice": "^0.2.1",
+    "@stdlib/slice-multi": "^0.2.1",
+    "@stdlib/string-base-replace": "^0.2.1",
+    "@stdlib/string-base-trim": "^0.2.1",
+    "@stdlib/error-tools-fmtprodmsg": "^0.2.1",
+    "@stdlib/types": "^0.3.2",
+    "@stdlib/utils-define-nonenumerable-read-only-property": "^0.2.1",
+    "@stdlib/utils-inherit": "^0.2.1",
+    "@stdlib/utils-properties-in": "^0.2.1",
+    "@stdlib/error-tools-fmtprodmsg": "^0.2.1"
+  },
+  "devDependencies": {
+    "@stdlib/array-complex128": "^0.2.0",
+    "@stdlib/array-complex64": "^0.2.0",
+    "@stdlib/array-float64": "^0.2.1",
+    "@stdlib/assert-has-own-property": "^0.2.1",
+    "@stdlib/assert-has-property": "^0.2.1",
+    "@stdlib/assert-has-proxy-support": "^0.2.1",
+    "@stdlib/assert-instance-of": "^0.2.1",
+    "@stdlib/assert-is-nonnegative-integer": "^0.2.1",
+    "@stdlib/assert-is-plain-object": "^0.2.1",
+    "@stdlib/assert-is-positive-integer": "^0.2.1",
+    "@stdlib/complex-float32": "^0.2.1",
+    "@stdlib/complex-float64": "^0.2.1",
+    "@stdlib/complex-imagf": "^0.2.1",
+    "@stdlib/complex-realf": "^0.2.1",
+    "@stdlib/ndarray-to-array": "^0.2.0",
+    "@stdlib/ndarray-zeros": "^0.2.0",
+    "@stdlib/slice-ctor": "^0.2.1",
+    "tape": "git+https://github.com/kgryte/tape.git#fix/globby",
+    "istanbul": "^0.4.1",
+    "tap-min": "git+https://github.com/Planeshifter/tap-min.git",
+    "@stdlib/bench-harness": "^0.2.1"
+  },
+  "engines": {
+    "node": ">=6.0.0",
+    "npm": ">2.7.0"
+  },
+  "os": [
+    "aix",
+    "darwin",
+    "freebsd",
+    "linux",
+    "macos",
+    "openbsd",
+    "sunos",
+    "win32",
+    "windows"
+  ],
   "keywords": [
     "stdlib",
     "stdtypes",
@@ -34,6 +136,7 @@
     "fancy",
     "slicing"
   ],
+  "__stdlib__": {},
   "funding": {
     "type": "opencollective",
     "url": "https://opencollective.com/stdlib"

@@ -77,8 +77,8 @@
     "@stdlib/error-tools-fmtprodmsg": "^0.2.1"
   },
   "devDependencies": {
-    "@stdlib/array-complex128": "^0.2.0",
-    "@stdlib/array-complex64": "^0.2.0",
+    "@stdlib/array-complex128": "^0.2.1",
+    "@stdlib/array-complex64": "^0.2.1",
     "@stdlib/array-float64": "^0.2.1",
     "@stdlib/assert-has-own-property": "^0.2.1",
     "@stdlib/assert-has-property": "^0.2.1",
@@ -91,8 +91,8 @@
     "@stdlib/complex-float64": "^0.2.1",
     "@stdlib/complex-imagf": "^0.2.1",
     "@stdlib/complex-realf": "^0.2.1",
-    "@stdlib/ndarray-to-array": "^0.2.0",
-    "@stdlib/ndarray-zeros": "^0.2.0",
+    "@stdlib/ndarray-to-array": "^0.2.1",
+    "@stdlib/ndarray-zeros": "^0.2.1",
     "@stdlib/slice-ctor": "^0.2.1",
     "tape": "git+https://github.com/kgryte/tape.git#fix/globby",
     "istanbul": "^0.4.1",

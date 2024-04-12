@@ -69,7 +69,7 @@
     "@stdlib/slice-multi": "^0.2.1",
     "@stdlib/string-base-replace": "^0.2.1",
     "@stdlib/string-base-trim": "^0.2.1",
-    "@stdlib/string-format": "^0.2.1",
+    "@stdlib/error-tools-fmtprodmsg": "^0.2.1",
     "@stdlib/types": "^0.3.2",
     "@stdlib/utils-define-nonenumerable-read-only-property": "^0.2.1",
     "@stdlib/utils-inherit": "^0.2.1",

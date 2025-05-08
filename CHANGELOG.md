@@ -4,7 +4,19 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2025-02-24)
+## Unreleased (2025-05-08)
+
+<section class="issues">
+
+### Closed Issues
+
+This release closes the following issue:
+
+[#6933](https://github.com/stdlib-js/stdlib/issues/6933)
+
+</section>
+
+<!-- /.issues -->
 
 <section class="commits">
 
@@ -12,6 +24,7 @@
 
 <details>
 
+-   [`92b9956`](https://github.com/stdlib-js/stdlib/commit/92b99565374d44d5456a36871bd19a957e33a986) - **chore:** fix EditorConfig lint errors [(#6939)](https://github.com/stdlib-js/stdlib/pull/6939) _(by zhanggy)_
 -   [`e81185b`](https://github.com/stdlib-js/stdlib/commit/e81185b4a0fa3537ab4a8a16644b7fa90bb184a3) - **refactor:** rely on `ndarray/to-fancy` for implementation logic _(by Athan Reines)_
 -   [`0d6bf75`](https://github.com/stdlib-js/stdlib/commit/0d6bf755cd3fcefbdf4751bc1f8e011bedefc057) - **refactor:** resolve error constructor and add todos _(by Athan Reines)_
 -   [`8d4c46b`](https://github.com/stdlib-js/stdlib/commit/8d4c46b10ca912401e0ff0caa37a17cd3c443c2f) - **refactor:** update paths _(by Athan Reines)_
@@ -28,9 +41,10 @@
 
 ### Contributors
 
-A total of 1 person contributed to this release. Thank you to this contributor:
+A total of 2 people contributed to this release. Thank you to the following contributors:
 
 -   Athan Reines
+-   zhanggy
 
 </section>
 

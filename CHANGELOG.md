@@ -4,7 +4,7 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2025-06-30)
+## Unreleased (2025-09-01)
 
 <section class="issues">
 
@@ -24,6 +24,7 @@ This release closes the following issue:
 
 <details>
 
+-   [`7add020`](https://github.com/stdlib-js/stdlib/commit/7add0201c13e56a0381926ccfd4073c84eaf2ed4) - **test:** use standardized assertion messages and fix lint errors _(by Philipp Burckhardt)_
 -   [`92b9956`](https://github.com/stdlib-js/stdlib/commit/92b99565374d44d5456a36871bd19a957e33a986) - **chore:** fix EditorConfig lint errors [(#6939)](https://github.com/stdlib-js/stdlib/pull/6939) _(by zhanggy)_
 -   [`e81185b`](https://github.com/stdlib-js/stdlib/commit/e81185b4a0fa3537ab4a8a16644b7fa90bb184a3) - **refactor:** rely on `ndarray/to-fancy` for implementation logic _(by Athan Reines)_
 -   [`0d6bf75`](https://github.com/stdlib-js/stdlib/commit/0d6bf755cd3fcefbdf4751bc1f8e011bedefc057) - **refactor:** resolve error constructor and add todos _(by Athan Reines)_
@@ -41,9 +42,10 @@ This release closes the following issue:
 
 ### Contributors
 
-A total of 2 people contributed to this release. Thank you to the following contributors:
+A total of 3 people contributed to this release. Thank you to the following contributors:
 
 -   Athan Reines
+-   Philipp Burckhardt
 -   zhanggy
 
 </section>

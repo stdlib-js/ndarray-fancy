@@ -38,7 +38,7 @@
   },
   "dependencies": {
     "@stdlib/ndarray-ctor": "^0.3.1",
-    "@stdlib/ndarray-to-fancy": "^0.1.0",
+    "@stdlib/ndarray-to-fancy": "^0.1.1",
     "@stdlib/types": "^0.4.3",
     "@stdlib/utils-define-nonenumerable-read-only-property": "^0.2.3",
     "@stdlib/utils-inherit": "^0.2.3"
@@ -52,7 +52,7 @@
     "@stdlib/assert-has-proxy-support": "^0.2.3",
     "@stdlib/assert-instance-of": "^0.3.1",
     "@stdlib/assert-is-function": "^0.2.3",
-    "@stdlib/assert-is-ndarray-like": "^0.2.2",
+    "@stdlib/assert-is-ndarray-like": "^0.2.3",
     "@stdlib/assert-is-nonnegative-integer": "^0.2.3",
     "@stdlib/assert-is-plain-object": "^0.2.3",
     "@stdlib/assert-is-positive-integer": "^0.2.3",
@@ -60,8 +60,8 @@
     "@stdlib/complex-float32-imag": "^0.1.2",
     "@stdlib/complex-float32-real": "^0.1.2",
     "@stdlib/complex-float64-ctor": "^0.1.2",
-    "@stdlib/ndarray-to-array": "^0.2.1",
-    "@stdlib/ndarray-zeros": "^0.3.0",
+    "@stdlib/ndarray-to-array": "^0.2.2",
+    "@stdlib/ndarray-zeros": "^0.3.1",
     "@stdlib/slice-ctor": "^0.2.3",
     "@stdlib/slice-multi": "^0.2.3",
     "tape": "git+https://github.com/kgryte/tape.git#fix/globby",

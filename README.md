@@ -44,8 +44,8 @@ limitations under the License.
 A **FancyArray** is an [`ndarray`][@stdlib/ndarray/ctor] which supports slicing via indexing expressions.
 
 ```javascript
-var ndarray2array = require( '@stdlib/ndarray-to-array' );
-var FancyArray = require( '@stdlib/ndarray-fancy' );
+import ndarray2array from 'https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-to-array@deno/mod.js';
+import FancyArray from 'https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-fancy@deno/mod.js';
 
 var buffer = [ 1, 2, 3, 4, 5, 6 ];
 var x = new FancyArray( 'generic', buffer, [ 6 ], [ 1 ], 0, 'row-major' );
@@ -79,32 +79,14 @@ arr = ndarray2array( y );
 
 <!-- Package usage documentation. -->
 
-<section class="installation">
 
-## Installation
-
-```bash
-npm install @stdlib/ndarray-fancy
-```
-
-Alternatively,
-
--   To load the package in a website via a `script` tag without installation and bundlers, use the [ES Module][es-module] available on the [`esm`][esm-url] branch (see [README][esm-readme]).
--   If you are using Deno, visit the [`deno`][deno-url] branch (see [README][deno-readme] for usage intructions).
--   For use in Observable, or in browser/node environments, use the [Universal Module Definition (UMD)][umd] build available on the [`umd`][umd-url] branch (see [README][umd-readme]).
-
-The [branches.md][branches-url] file summarizes the available branches and displays a diagram illustrating their relationships.
-
-To view installation and usage instructions specific to each branch build, be sure to explicitly navigate to the respective README files on each branch, as linked to above.
-
-</section>
 
 <section class="usage">
 
 ## Usage
 
 ```javascript
-var FancyArray = require( '@stdlib/ndarray-fancy' );
+import FancyArray from 'https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-fancy@deno/mod.js';
 ```
 
 <a name="main"></a>
@@ -216,7 +198,7 @@ var str = FancyArray.name;
 Size (in bytes) of the array (if known).
 
 ```javascript
-var Float64Array = require( '@stdlib/array-float64' );
+import Float64Array from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-float64@deno/mod.js';
 
 // Specify the array configuration:
 var buffer = new Float64Array( [ 1.0, 2.0, 3.0, 4.0 ] );
@@ -258,7 +240,7 @@ var nbytes = arr.byteLength;
 Size (in bytes) of each array element (if known).
 
 ```javascript
-var Float32Array = require( '@stdlib/array-float32' );
+import Float32Array from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-float32@deno/mod.js';
 
 // Specify the array configuration:
 var buffer = new Float32Array( [ 1.0, 2.0, 3.0, 4.0 ] );
@@ -300,7 +282,7 @@ var nbytes = arr.BYTES_PER_ELEMENT;
 A reference to the underlying data buffer.
 
 ```javascript
-var Int8Array = require( '@stdlib/array-int8' );
+import Int8Array from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-int8@deno/mod.js';
 
 // Specify the array configuration:
 var buffer = new Int8Array( [ 1, 2, 3, 4 ] );
@@ -327,7 +309,7 @@ var bool = ( d === buffer );
 Underlying [data type][@stdlib/ndarray/dtypes].
 
 ```javascript
-var Uint8Array = require( '@stdlib/array-uint8' );
+import Uint8Array from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-uint8@deno/mod.js';
 
 // Specify the array configuration:
 var buffer = new Uint8Array( [ 1, 2, 3, 4 ] );
@@ -357,7 +339,7 @@ Meta information, such as information regarding the memory layout of the array. 
 An array is contiguous if (1) an array is compatible with being stored in a single memory segment and (2) each array element is adjacent to the next array element. Note that an array can be both row-major contiguous and column-major contiguous at the same time (e.g., if an array is a 1-dimensional array with `strides = [1]`).
 
 ```javascript
-var Int32Array = require( '@stdlib/array-int32' );
+import Int32Array from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-int32@deno/mod.js';
 
 // Specify the array configuration:
 var buffer = new Int32Array( [ 1, 2, 3, 4 ] );
@@ -381,7 +363,7 @@ var flg = arr.flags;
 Number of array elements.
 
 ```javascript
-var Uint16Array = require( '@stdlib/array-uint16' );
+import Uint16Array from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-uint16@deno/mod.js';
 
 // Specify the array configuration:
 var buffer = new Uint16Array( [ 1, 2, 3, 4 ] );
@@ -405,7 +387,7 @@ var len = arr.length;
 Number of dimensions.
 
 ```javascript
-var Uint8ClampedArray = require( '@stdlib/array-uint8c' );
+import Uint8ClampedArray from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-uint8c@deno/mod.js';
 
 // Specify the array configuration:
 var buffer = new Uint8ClampedArray( [ 1, 2, 3, 4 ] );
@@ -429,7 +411,7 @@ var ndims = arr.ndims;
 Index offset which specifies the `buffer` index at which to start iterating over array elements.
 
 ```javascript
-var Int16Array = require( '@stdlib/array-int16' );
+import Int16Array from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-int16@deno/mod.js';
 
 // Specify the array configuration:
 var buffer = new Int16Array( [ 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12 ] );
@@ -453,7 +435,7 @@ var o = arr.offset;
 Array order. The array order is either row-major (C-style) or column-major (Fortran-style).
 
 ```javascript
-var Uint32Array = require( '@stdlib/array-uint32' );
+import Uint32Array from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-uint32@deno/mod.js';
 
 // Specify the array configuration:
 var buffer = new Uint32Array( [ 1, 2, 3, 4 ] );
@@ -721,10 +703,10 @@ The method does **not** serialize data outside of the buffer region defined by t
 <!-- eslint-disable new-cap, array-element-newline, comma-spacing -->
 
 ```javascript
-var S = require( '@stdlib/slice-ctor' );
-var E = require( '@stdlib/slice-multi' );
-var toArray = require( '@stdlib/ndarray-to-array' );
-var FancyArray = require( '@stdlib/ndarray-fancy' );
+import S from 'https://cdn.jsdelivr.net/gh/stdlib-js/slice-ctor@deno/mod.js';
+import E from 'https://cdn.jsdelivr.net/gh/stdlib-js/slice-multi@deno/mod.js';
+import toArray from 'https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-to-array@deno/mod.js';
+import FancyArray from 'https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-fancy@deno/mod.js';
 
 var buffer = [
     1, 2,
@@ -817,7 +799,7 @@ console.log( toArray( y4 ) );
 
 ## Notice
 
-This package is part of [stdlib][stdlib], a standard library for JavaScript and Node.js, with an emphasis on numerical and scientific computing. The library provides a collection of robust, high performance libraries for mathematics, statistics, streams, utilities, and more.
+This package is part of [stdlib][stdlib], a standard library with an emphasis on numerical and scientific computing. The library provides a collection of robust, high performance libraries for mathematics, statistics, streams, utilities, and more.
 
 For more information on the project, filing bug reports and feature requests, and guidance on how to develop [stdlib][stdlib], see the main project [repository][stdlib].
 
@@ -882,21 +864,21 @@ Copyright &copy; 2016-2026. The Stdlib [Authors][stdlib-authors].
 
 [json]: http://www.json.org/
 
-[@stdlib/ndarray/ctor]: https://github.com/stdlib-js/ndarray-ctor
+[@stdlib/ndarray/ctor]: https://github.com/stdlib-js/ndarray-ctor/tree/deno
 
-[@stdlib/ndarray/dtypes]: https://github.com/stdlib-js/ndarray-dtypes
+[@stdlib/ndarray/dtypes]: https://github.com/stdlib-js/ndarray-dtypes/tree/deno
 
-[@stdlib/ndarray/orders]: https://github.com/stdlib-js/ndarray-orders
+[@stdlib/ndarray/orders]: https://github.com/stdlib-js/ndarray-orders/tree/deno
 
-[@stdlib/ndarray/index-modes]: https://github.com/stdlib-js/ndarray-index-modes
+[@stdlib/ndarray/index-modes]: https://github.com/stdlib-js/ndarray-index-modes/tree/deno
 
-[@stdlib/repl]: https://github.com/stdlib-js/repl
+[@stdlib/repl]: https://github.com/stdlib-js/repl/tree/deno
 
-[@stdlib/proxy/ctor]: https://github.com/stdlib-js/proxy-ctor
+[@stdlib/proxy/ctor]: https://github.com/stdlib-js/proxy-ctor/tree/deno
 
 <!-- <related-links> -->
 
-[@stdlib/ndarray/array]: https://github.com/stdlib-js/ndarray-array
+[@stdlib/ndarray/array]: https://github.com/stdlib-js/ndarray-array/tree/deno
 
 <!-- </related-links> -->
 

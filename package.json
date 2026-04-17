@@ -64,7 +64,7 @@
     "@stdlib/ndarray-zeros": "^0.3.1",
     "@stdlib/slice-ctor": "^0.2.3",
     "@stdlib/slice-multi": "^0.2.3",
-    "@stdlib/string-format": "^0.2.3",
+    "@stdlib/error-tools-fmtprodmsg": "^0.2.3",
     "tape": "git+https://github.com/kgryte/tape.git#fix/globby",
     "istanbul": "^0.4.1",
     "tap-min": "git+https://github.com/Planeshifter/tap-min.git",

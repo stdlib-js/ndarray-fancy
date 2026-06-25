@@ -4,7 +4,7 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2026-05-21)
+## Unreleased (2026-06-25)
 
 <section class="issues">
 
@@ -24,6 +24,7 @@ This release closes the following issue:
 
 <details>
 
+-   [`1977f92`](https://github.com/stdlib-js/stdlib/commit/1977f92944b56c40c27b23d74570f2958adc7a39) - **docs:** update documented default value for `submode` option [(#13106)](https://github.com/stdlib-js/stdlib/pull/13106) _(by Philipp Burckhardt)_
 -   [`acd2375`](https://github.com/stdlib-js/stdlib/commit/acd2375e62f7a4691c2cb7a5f30ac3af13d18f26) - **style:** resolve lint error in `ndarray/fancy` [(#11895)](https://github.com/stdlib-js/stdlib/pull/11895) _(by Shivam Thakur, Athan Reines)_
 -   [`6d6b9d4`](https://github.com/stdlib-js/stdlib/commit/6d6b9d42d8904ca49fb55e2ca464780573886aa0) - **bench:** refactor to use string interpolation in `@stdlib/ndarray` [(#11446)](https:-/github.com/stdlib-js/stdlib/pull/11446) _(by Karan Anand)_
 -   [`3cdc9a7`](https://github.com/stdlib-js/stdlib/commit/3cdc9a7d5b1d8c703e01f93f3a796e6b6858bcad) - **chore:** fix JavaScript lint errors [(#10710)](https://github.com/stdlib-js/stdlib/pull/10710) _(by Partha Das)_
@@ -38,11 +39,12 @@ This release closes the following issue:
 
 ### Contributors
 
-A total of 4 people contributed to this release. Thank you to the following contributors:
+A total of 5 people contributed to this release. Thank you to the following contributors:
 
 -   Athan Reines
 -   Karan Anand
 -   Partha Das
+-   Philipp Burckhardt
 -   Shivam Thakur
 
 </section>
